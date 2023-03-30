@@ -1,1 +1,1 @@
-# godot-trial
+# godot-course-1
