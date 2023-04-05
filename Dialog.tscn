@@ -1,0 +1,60 @@
+[gd_scene load_steps=3 format=2]
+
+[sub_resource type="Gradient" id=1]
+offsets = PoolRealArray( 0.044, 1 )
+colors = PoolColorArray( 0.341176, 0.309804, 0.309804, 1, 0.0980392, 0.0901961, 0.0901961, 1 )
+
+[sub_resource type="GradientTexture" id=2]
+gradient = SubResource( 1 )
+width = 900
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+margin_left = 61.201
+margin_top = 89.8284
+margin_right = 961.201
+margin_bottom = 531.828
+texture = SubResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 137.0
+margin_top = 133.0
+margin_right = 887.0
+margin_bottom = 394.0
+text = "There be Dragons here."
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="LineEdit" type="LineEdit" parent="."]
+margin_left = 126.0
+margin_top = 452.0
+margin_right = 626.0
+margin_bottom = 506.0
+align = 1
+max_length = 50
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Ok" type="Button" parent="."]
+margin_left = 790.0
+margin_top = 454.0
+margin_right = 909.0
+margin_bottom = 505.0
+text = "OK"
+
+[node name="Submit" type="Button" parent="."]
+margin_left = 659.272
+margin_top = 453.828
+margin_right = 756.272
+margin_bottom = 504.828
+text = "Submit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
