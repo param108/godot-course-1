@@ -32,3 +32,13 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
+
+
+
+
+func _on_TopLeftCollision_area_entered(area):
+	get_tree().change_scene("res://top_left_house.tscn")
+
+
+func _on_BottomLeftCollision_area_entered(area):
+	get_tree().change_scene("res://bottom_left_house.tscn")
