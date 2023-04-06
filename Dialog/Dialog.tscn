@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Dialog/Dialog.gd" type="Script" id=1]
 
 [sub_resource type="Gradient" id=1]
 offsets = PoolRealArray( 0.044, 1 )
@@ -9,6 +11,7 @@ gradient = SubResource( 1 )
 width = 900
 
 [node name="CanvasLayer" type="CanvasLayer"]
+script = ExtResource( 1 )
 
 [node name="TextureRect" type="TextureRect" parent="."]
 margin_left = 61.201
@@ -21,39 +24,42 @@ __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Label" type="Label" parent="."]
-margin_left = 137.0
-margin_top = 133.0
-margin_right = 887.0
-margin_bottom = 394.0
+[node name="Label" type="Label" parent="TextureRect"]
+margin_left = 75.799
+margin_top = 43.1716
+margin_right = 825.799
+margin_bottom = 304.172
 text = "There be Dragons here."
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="LineEdit" type="LineEdit" parent="."]
-margin_left = 126.0
-margin_top = 452.0
-margin_right = 626.0
-margin_bottom = 506.0
+[node name="LineEdit" type="LineEdit" parent="TextureRect"]
+margin_left = 64.799
+margin_top = 362.172
+margin_right = 564.799
+margin_bottom = 416.172
 align = 1
 max_length = 50
 __meta__ = {
 "_edit_use_anchors_": false
 }
 
-[node name="Ok" type="Button" parent="."]
-margin_left = 790.0
-margin_top = 454.0
-margin_right = 909.0
-margin_bottom = 505.0
+[node name="Ok" type="Button" parent="TextureRect"]
+margin_left = 728.799
+margin_top = 364.172
+margin_right = 847.799
+margin_bottom = 415.172
 text = "OK"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
-[node name="Submit" type="Button" parent="."]
-margin_left = 659.272
-margin_top = 453.828
-margin_right = 756.272
-margin_bottom = 504.828
+[node name="Submit" type="Button" parent="TextureRect"]
+margin_left = 598.071
+margin_top = 364.0
+margin_right = 695.071
+margin_bottom = 415.0
 text = "Submit"
 __meta__ = {
 "_edit_use_anchors_": false
