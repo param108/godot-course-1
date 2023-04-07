@@ -5,7 +5,7 @@ extends AnimatedSprite
 # var a = 2
 # var b = "text"
 
-
+const WALK_SPEED = 2
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
