@@ -24,10 +24,26 @@ func update_controls(text_key):
 
 func on_show_dialog(text_key):
 	rect.visible = true
-	GlobalData.current_dialog_key = text_key
+	switch_dialog(text_key)
 	
 func on_close_dialog():
 	rect.visible = false
+	
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	pass
+
+func switch_dialog(key):
+	GlobalData.current_dialog_key = key
+	label.text = GlobalData.dialog_data[key]["dialog"]
+
+func _on_Submit_pressed():
+	var data = GlobalData.dialog_data[GlobalData.current_dialog_key]
+	var value = lineEdit.text.strip_edges(true, true)
+	if "choices" in data:
+		if value in data["choices"]:
+			var key = data["choices"][value]
+			switch_dialog(key)
+	else:
+		switch_dialog("didnt_understand")
+		
