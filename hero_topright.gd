@@ -20,4 +20,6 @@ func _physics_process(delta):
 	move_and_collide(velocity)
 
 func _on_TopRightHouseExit_area_entered(area):
+	GlobalData.reentered = true
+	GlobalData.reentered_from = "top_right_house"
 	get_tree().change_scene("res://opening.tscn")

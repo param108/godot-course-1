@@ -11,7 +11,14 @@ const WALK_SPEED = 2
 # var b = "text"
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
-	
+
+	if GlobalData.reentered:
+		var point = GlobalData.reentry_points[GlobalData.reentered_from]
+		position.x = point["x"]
+		position.y = point["y"]
+		print("REENTERED", point)
+		GlobalData.reentered = false
+		
 	if Input.is_action_pressed("ui_left"):
 		velocity = Vector2.LEFT*WALK_SPEED
 	elif Input.is_action_pressed("ui_right"):
@@ -24,14 +31,15 @@ func _physics_process(delta):
 		velocity = Vector2.ZERO
 	move_and_collide(velocity)
 	
+	
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-#func _process(delta):
-#	pass
+func _process(delta):
+	pass
 
 
 

@@ -9,9 +9,19 @@ const dialog_data = {
 	},
 	"didnt understand": {
 		"dialog": "Sorry didn't understand the output.",
-		"need_input": false,
+		"need_input": true,
 		"choices": {},
 	}
 }
 
 var current_dialog_key = ""
+
+var reentered = false
+var reentered_from = ""
+
+const reentry_points = {
+	"top_right_house": {
+		"x": 850,
+		"y": 265
+	}
+}
