@@ -43,4 +43,6 @@ func _on_OpeningOutsideCollison_area_exited(area):
 
 
 func _on_OpeningOutsideCollison_area_entered(area):
+	GlobalData.reentered = true
+	GlobalData.reentered_from = "bottom_left_house"
 	get_tree().change_scene("res://opening.tscn")
