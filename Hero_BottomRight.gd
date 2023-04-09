@@ -33,5 +33,7 @@ func _ready():
 
 
 func _on_Area2D_area_entered(area):
+	GlobalData.reentered = true
+	GlobalData.reentered_from = "bottom_right_house"
 	get_tree().change_scene("res://opening.tscn")
 
