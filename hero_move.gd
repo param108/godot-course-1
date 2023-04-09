@@ -16,7 +16,6 @@ func _physics_process(delta):
 		var point = GlobalData.reentry_points[GlobalData.reentered_from]
 		position.x = point["x"]
 		position.y = point["y"]
-		print("REENTERED", point)
 		GlobalData.reentered = false
 		
 	if Input.is_action_pressed("ui_left"):
