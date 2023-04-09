@@ -24,4 +24,16 @@ const reentry_points = {
 		"x": 850,
 		"y": 265
 	}
+	, "bottom_right_house":{
+		"x": 826 , 
+		"y": 549
+	},
+	"bottom_left_house" :{
+		"x": 150,
+		"y": 550
+	},
+	"top_left_house":{
+		"x":150,
+		"y": 205
+	}	
 }
