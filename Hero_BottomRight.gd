@@ -37,3 +37,8 @@ func _on_Area2D_area_entered(area):
 	GlobalData.reentered_from = "bottom_right_house"
 	get_tree().change_scene("res://opening.tscn")
 
+
+
+func _on_Area2D2_area_entered(area):
+	print("reached")
+	SignalBus.emit_signal("show_dialog","aria_clue")
