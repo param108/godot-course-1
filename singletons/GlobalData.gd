@@ -22,8 +22,25 @@ const dialog_data = {
 		get the fragment """,
 		"need_input" : false,
 		"choices" : {}
+	},
+	"rug_riddle":{
+		"dialog": """Hello ! You must be the reknowed Dr.Zoey, I've heard a lot
+		lot about you.Yes,One of the pieces of the map is here but I forgot 
+		where it was.Maybe you can search my house.My parents had a fervour for
+		rugs and I love them too! RUGS RUGS RUGS!!!
+		
+		My parents told me this riddle when I was young, Here it is! :
+		Go to the abode of relaxation and peace 
+		Search the rug made of fleece 
+		Then you might find 
+		The fifth vase from the fourth the map of my kind """,
+		"need_input" : false,
+		"choices" : {}
 	}
 }
+
+		
+
 
 var current_dialog_key = ""
 

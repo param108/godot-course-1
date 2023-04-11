@@ -20,9 +20,6 @@ margin_right = 961.201
 margin_bottom = 531.828
 texture = SubResource( 2 )
 expand = true
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Label" type="Label" parent="TextureRect"]
 margin_left = 75.799
@@ -41,9 +38,6 @@ margin_right = 564.799
 margin_bottom = 416.172
 align = 1
 max_length = 50
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="Ok" type="Button" parent="TextureRect"]
 margin_left = 728.799
@@ -64,5 +58,6 @@ text = "Submit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="pressed" from="TextureRect/Ok" to="." method="_on_Ok_pressed"]
 [connection signal="pressed" from="TextureRect/Submit" to="." method="_on_Submit_pressed"]

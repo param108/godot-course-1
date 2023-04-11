@@ -46,3 +46,7 @@ func _on_OpeningOutsideCollison_area_entered(area):
 	GlobalData.reentered = true
 	GlobalData.reentered_from = "top_left_house"
 	get_tree().change_scene("res://opening.tscn")
+
+
+func _on_bumptl_area_entered(area):
+	SignalBus.emit_signal("show_dialog","rug_riddle")
