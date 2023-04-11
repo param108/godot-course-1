@@ -1127,8 +1127,7 @@ extents = Vector2( 12, 21.5 )
 
 [node name="Node2D" type="Node2D"]
 __meta__ = {
-"_edit_horizontal_guides_": [ 201.0 ],
-"_edit_vertical_guides_": [ 1280.0, 1264.0, 152.0 ]
+"_edit_vertical_guides_": [ 1280.0, 1264.0 ]
 }
 
 [node name="TileMap" type="TileMap" parent="."]
