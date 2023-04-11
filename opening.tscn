@@ -647,46 +647,6 @@
 38/shapes = [  ]
 38/z_index = 0
 
-[sub_resource type="AtlasTexture" id=27]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=28]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 32, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=29]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 64, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=30]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 96, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=31]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 128, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=32]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 160, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 192, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=34]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 224, 0, 32, 32 )
-
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 5 )
@@ -807,13 +767,48 @@ flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 224, 32, 32, 32 )
 
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 224, 0, 32, 32 )
+
 [sub_resource type="SpriteFrames" id=35]
 animations = [ {
-"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
-"loop": true,
-"name": "down",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
 "loop": true,
 "name": "left",
@@ -827,6 +822,11 @@ animations = [ {
 "frames": [ SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
 "loop": true,
 "name": "up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
+"loop": true,
+"name": "down",
 "speed": 5.0
 } ]
 
@@ -1217,7 +1217,6 @@ script = ExtResource( 12 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="BottomRightCollision"]
 position = Vector2( 794, 511.5 )
 shape = SubResource( 45 )
-
 [connection signal="area_entered" from="TopLeftCollision" to="KinematicBody2D" method="_on_TopLeftCollision_area_entered"]
 [connection signal="area_entered" from="BottomLeftCollision" to="KinematicBody2D" method="_on_BottomLeftCollision_area_entered"]
 [connection signal="area_entered" from="TopRightCollision" to="KinematicBody2D" method="_on_TopRightCollision_area_entered"]
