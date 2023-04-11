@@ -13,12 +13,12 @@ func _ready():
 	SignalBus.connect("close_dialog", self, "on_close_dialog")
 	
 func update_controls(text_key):
-	lineEdit.text = GlobalData[text_key]["dialog"]
+	label.text = GlobalData.dialog_data[text_key]["dialog"]
 	if GlobalData.dialog_data[text_key]["need_input"]:
-		okBtn.visible = true
+		lineEdit.visible = true
 		submitBtn.visible = true
 	else:
-		okBtn.visible = false
+		lineEdit.visible = false
 		submitBtn.visible = false
 		
 
@@ -35,7 +35,7 @@ func _process(delta):
 
 func switch_dialog(key):
 	GlobalData.current_dialog_key = key
-	label.text = GlobalData.dialog_data[key]["dialog"]
+	update_controls(key)
 
 func _on_Submit_pressed():
 	var data = GlobalData.dialog_data[GlobalData.current_dialog_key]
@@ -47,3 +47,7 @@ func _on_Submit_pressed():
 	else:
 		switch_dialog("didnt_understand")
 		
+
+
+func _on_Ok_pressed():
+	SignalBus.emit_signal("close_dialog")
