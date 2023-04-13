@@ -4,7 +4,7 @@
 [ext_resource path="res://basic_tileset_and_assets_plus/tiles_and_assets/terrain_tiles_v2.png" type="Texture" id=2]
 [ext_resource path="res://basic_tileset_and_assets_plus/tiles_and_assets/water_and_island_tiles_v2.png" type="Texture" id=3]
 [ext_resource path="res://basic_tileset_and_assets_plus/tiles_and_assets/dirtpath_tiles.png" type="Texture" id=4]
-[ext_resource path="res://characters/characters/char1.png" type="Texture" id=5]
+[ext_resource path="res://characters/characters/drZoeyoriginal 2.png" type="Texture" id=5]
 [ext_resource path="res://hero_animate.gd" type="Script" id=6]
 [ext_resource path="res://hero_move.gd" type="Script" id=7]
 [ext_resource path="res://Topleftcollision.gd" type="Script" id=8]
@@ -647,184 +647,184 @@
 38/shapes = [  ]
 38/z_index = 0
 
-[sub_resource type="AtlasTexture" id=27]
+[sub_resource type="AtlasTexture" id=46]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 0, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=28]
+[sub_resource type="AtlasTexture" id=47]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 32, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=29]
+[sub_resource type="AtlasTexture" id=48]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 64, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=30]
+[sub_resource type="AtlasTexture" id=49]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 96, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=31]
+[sub_resource type="AtlasTexture" id=50]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 128, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=32]
+[sub_resource type="AtlasTexture" id=51]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 160, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=33]
+[sub_resource type="AtlasTexture" id=52]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 192, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=34]
+[sub_resource type="AtlasTexture" id=53]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 224, 0, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=3]
+[sub_resource type="AtlasTexture" id=54]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 0, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=4]
+[sub_resource type="AtlasTexture" id=55]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 32, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=5]
+[sub_resource type="AtlasTexture" id=56]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 32, 32 )
+region = Rect2( 64, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=6]
+[sub_resource type="AtlasTexture" id=57]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 32, 0, 32, 32 )
+region = Rect2( 96, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=7]
+[sub_resource type="AtlasTexture" id=58]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 64, 0, 32, 32 )
+region = Rect2( 128, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=8]
+[sub_resource type="AtlasTexture" id=59]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 96, 0, 32, 32 )
+region = Rect2( 160, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=9]
+[sub_resource type="AtlasTexture" id=60]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 128, 0, 32, 32 )
+region = Rect2( 192, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=10]
+[sub_resource type="AtlasTexture" id=61]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 160, 0, 32, 32 )
+region = Rect2( 224, 96, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=11]
+[sub_resource type="AtlasTexture" id=62]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 192, 0, 32, 32 )
+region = Rect2( 0, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=12]
+[sub_resource type="AtlasTexture" id=63]
 flags = 4
 atlas = ExtResource( 5 )
-region = Rect2( 224, 0, 32, 32 )
+region = Rect2( 32, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=13]
+[sub_resource type="AtlasTexture" id=64]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 64, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=14]
+[sub_resource type="AtlasTexture" id=65]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 96, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=15]
+[sub_resource type="AtlasTexture" id=66]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 128, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=16]
+[sub_resource type="AtlasTexture" id=67]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 160, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=17]
+[sub_resource type="AtlasTexture" id=68]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 192, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=18]
+[sub_resource type="AtlasTexture" id=69]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 224, 64, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=19]
+[sub_resource type="AtlasTexture" id=70]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 0, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=20]
+[sub_resource type="AtlasTexture" id=71]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 32, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=21]
+[sub_resource type="AtlasTexture" id=72]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 64, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=22]
+[sub_resource type="AtlasTexture" id=73]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 96, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=23]
+[sub_resource type="AtlasTexture" id=74]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 128, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=24]
+[sub_resource type="AtlasTexture" id=75]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 160, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=25]
+[sub_resource type="AtlasTexture" id=76]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 192, 32, 32, 32 )
 
-[sub_resource type="AtlasTexture" id=26]
+[sub_resource type="AtlasTexture" id=77]
 flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 224, 32, 32, 32 )
 
 [sub_resource type="SpriteFrames" id=35]
 animations = [ {
-"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
+"frames": [ SubResource( 46 ), SubResource( 47 ), SubResource( 48 ), SubResource( 49 ), SubResource( 50 ), SubResource( 51 ), SubResource( 52 ), SubResource( 53 ) ],
 "loop": true,
 "name": "down",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
+"frames": [ SubResource( 54 ), SubResource( 55 ), SubResource( 56 ), SubResource( 57 ), SubResource( 58 ), SubResource( 59 ), SubResource( 60 ), SubResource( 61 ) ],
 "loop": true,
 "name": "left",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 11 ), SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ), SubResource( 17 ), SubResource( 18 ) ],
+"frames": [ SubResource( 62 ), SubResource( 63 ), SubResource( 64 ), SubResource( 65 ), SubResource( 66 ), SubResource( 67 ), SubResource( 68 ), SubResource( 69 ) ],
 "loop": true,
 "name": "right",
 "speed": 5.0
 }, {
-"frames": [ SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
+"frames": [ SubResource( 70 ), SubResource( 71 ), SubResource( 72 ), SubResource( 73 ), SubResource( 74 ), SubResource( 75 ), SubResource( 76 ), SubResource( 77 ) ],
 "loop": true,
 "name": "up",
 "speed": 5.0
@@ -1147,7 +1147,7 @@ format = 1
 tile_data = PoolIntArray( 65538, 18, 0, 65539, 11, 0, 65540, 11, 0, 65541, 11, 0, 65542, 11, 0, 65543, 11, 0, 65544, 12, 0, 65552, 35, 0, 65558, -1073741812, 0, 65559, -1073741811, 0, 65560, -1073741811, 0, 65561, -1073741811, 0, 65562, -1073741811, 0, 65563, -1073741811, 0, 65564, -1073741811, 0, 65565, -1073741809, 0, 131074, 17, 0, 131075, 10, 0, 131076, 10, 0, 131077, 10, 0, 131078, 10, 0, 131079, 10, 0, 131080, 8, 0, 131094, -1073741819, 0, 131095, -1610612726, 0, 131096, -1610612726, 0, 131097, -1610612726, 0, 131098, -1610612726, 0, 131099, -1610612726, 0, 131100, -1610612726, 0, 131101, -1610612725, 0, 196610, 17, 0, 196611, 10, 0, 196612, 10, 0, 196613, 10, 0, 196614, 10, 0, 196615, 10, 0, 196616, 8, 0, 196630, -1073741819, 0, 196631, -1610612726, 0, 196632, -1610612726, 0, 196633, -1610612726, 0, 196634, -1610612726, 0, 196635, -1610612726, 0, 196636, -1610612726, 0, 196637, -1610612725, 0, 262146, 17, 0, 262147, 10, 0, 262148, 10, 0, 262149, 10, 0, 262150, 10, 0, 262151, 10, 0, 262152, 8, 0, 262166, 4, 0, 262167, -1610612726, 0, 262168, -1610612726, 0, 262169, -1610612726, 0, 262170, -1610612726, 0, 262171, -1610612726, 0, 262172, -1610612726, 0, 262173, -1610612725, 0, 327682, 17, 0, 327683, 10, 0, 327684, 10, 0, 327685, 10, 0, 327686, 10, 0, 327687, 10, 0, 327688, 8, 0, 327702, -1073741819, 0, 327703, -1610612726, 0, 327704, -1610612726, 0, 327705, -1610612726, 0, 327706, -1610612726, 0, 327707, -1610612726, 0, 327708, -1610612726, 0, 327709, -1610612725, 0, 393218, 17, 0, 393219, 10, 0, 393220, 10, 0, 393221, 10, 0, 393222, 10, 0, 393223, 10, 0, 393224, 8, 0, 393238, -1073741819, 0, 393239, -1610612726, 0, 393240, -1610612726, 0, 393241, -1610612726, 0, 393242, -1610612726, 0, 393243, -1610612726, 0, 393244, -1610612726, 0, 393245, -1610612725, 0, 458754, 16, 0, 458755, 14, 0, 458756, 14, 0, 458757, 10, 0, 458758, 14, 0, 458759, 14, 0, 458760, 15, 0, 458774, -1073741819, 0, 458775, -1610612726, 0, 458776, -1610612726, 0, 458777, -1610612726, 0, 458778, -1610612726, 0, 458779, -1610612726, 0, 458780, -1610612726, 0, 458781, -1610612725, 0, 524310, -1610612721, 0, 524311, -1610612723, 0, 524312, -1610612723, 0, 524313, -1610612723, 0, 524314, 10, 0, 524315, -1610612723, 0, 524316, -1610612723, 0, 524317, -1610612724, 0, 655361, 18, 0, 655362, 11, 0, 655363, 11, 0, 655364, 10, 0, 655365, 11, 0, 655366, 11, 0, 655367, 11, 0, 655368, 12, 0, 720897, 17, 0, 720898, 10, 0, 720899, 10, 0, 720900, 10, 0, 720901, 10, 0, 720902, 10, 0, 720903, 10, 0, 720904, 13, 0, 720918, -1073741812, 0, 720919, -1073741811, 0, 720920, -1073741811, 0, 720921, -1073741811, 0, 720922, 10, 0, 720923, -1073741811, 0, 720924, 12, 0, 786433, 17, 0, 786434, 10, 0, 786435, 10, 0, 786436, 10, 0, 786437, 10, 0, 786438, 10, 0, 786439, 10, 0, 786440, 13, 0, 786454, 1610612744, 0, 786455, -1073741814, 0, 786456, -1073741814, 0, 786457, -1073741814, 0, 786458, -1073741814, 0, 786459, -1073741814, 0, 786460, 13, 0, 851969, 17, 0, 851970, 10, 0, 851971, 10, 0, 851972, 10, 0, 851973, 10, 0, 851974, 10, 0, 851975, 10, 0, 851976, 13, 0, 851990, 1610612744, 0, 851991, -1073741814, 0, 851992, -1073741814, 0, 851993, -1073741814, 0, 851994, -1073741814, 0, 851995, -1073741814, 0, 851996, 13, 0, 917505, 17, 0, 917506, 10, 0, 917507, 10, 0, 917508, 10, 0, 917509, 10, 0, 917510, 10, 0, 917511, 10, 0, 917512, 13, 0, 917526, 1610612744, 0, 917527, -1073741814, 0, 917528, -1073741814, 0, 917529, -1073741814, 0, 917530, -1073741814, 0, 917531, -1073741814, 0, 917532, 13, 0, 983041, 17, 0, 983042, 10, 0, 983043, 10, 0, 983044, 10, 0, 983045, 10, 0, 983046, 10, 0, 983047, 10, 0, 983048, 13, 0, 983055, 35, 0, 983062, -1073741813, 0, 983063, -1073741814, 0, 983064, -1073741814, 0, 983065, -1073741814, 0, 983066, -1073741814, 0, 983067, -1073741814, 0, 983068, 13, 0, 1048577, 17, 0, 1048578, 10, 0, 1048579, 10, 0, 1048580, 10, 0, 1048581, 10, 0, 1048582, 10, 0, 1048583, 10, 0, 1048584, 13, 0, 1048598, -1073741813, 0, 1048599, -1073741814, 0, 1048600, -1073741814, 0, 1048601, -1073741814, 0, 1048602, -1073741814, 0, 1048603, -1073741814, 0, 1048604, 13, 0, 1114113, 16, 0, 1114114, 2, 0, 1114115, 2, 0, 1114116, 2, 0, 1114117, 2, 0, 1114118, 2, 0, 1114119, 2, 0, 1114120, 15, 0, 1114134, 16, 0, 1114135, 14, 0, 1114136, 14, 0, 1114137, -1073741807, 0, 1114138, 14, 0, 1114139, 14, 0, 1114140, 15, 0 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 242, 286 )
+position = Vector2( 526, 153 )
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
@@ -1160,12 +1160,10 @@ position = Vector2( 0, 6 )
 shape = SubResource( 36 )
 
 [node name="Area2D" type="Area2D" parent="KinematicBody2D"]
-visible = false
 collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/Area2D"]
-visible = false
 position = Vector2( 0, 7 )
 shape = SubResource( 37 )
 
