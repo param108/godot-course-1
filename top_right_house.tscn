@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=2]
+[gd_scene load_steps=105 format=2]
 
 [ext_resource path="res://floor/wood_floor.png" type="Texture" id=1]
 [ext_resource path="res://interiors/Interior.png" type="Texture" id=2]
@@ -8,6 +8,8 @@
 [ext_resource path="res://TopRightHouseExit.gd" type="Script" id=6]
 [ext_resource path="res://characters/characters/saira.png" type="Texture" id=7]
 [ext_resource path="res://Dialog/Dialog.tscn" type="PackedScene" id=8]
+[ext_resource path="res://sairaMove.gd" type="Script" id=9]
+[ext_resource path="res://saira_anim.gd" type="Script" id=10]
 
 [sub_resource type="ConvexPolygonShape2D" id=1]
 points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
@@ -1414,7 +1416,7 @@ animations = [ {
 radius = 12.1655
 
 [sub_resource type="CircleShape2D" id=94]
-radius = 14.1421
+radius = 17.4276
 
 [node name="Node2D" type="Node2D"]
 
@@ -1463,31 +1465,33 @@ position = Vector2( 511.5, 601 )
 shape = SubResource( 59 )
 
 [node name="KinematicBody2D2" type="KinematicBody2D" parent="."]
-position = Vector2( 334.79, 418.488 )
+position = Vector2( 332.671, 358.099 )
+script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D2"]
 position = Vector2( -0.957947, -1.66653 )
 frames = SubResource( 92 )
 animation = "down"
+script = ExtResource( 10 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D2"]
 position = Vector2( -3.0769, 0.155121 )
 shape = SubResource( 93 )
 
+[node name="Area2D" type="Area2D" parent="KinematicBody2D2"]
+position = Vector2( -2.11804, 1.05896 )
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D2/Area2D"]
+position = Vector2( -0.957947, -0.963806 )
+shape = SubResource( 94 )
+
 [node name="CanvasLayer" parent="." instance=ExtResource( 8 )]
 
 [node name="TextureRect" parent="CanvasLayer" index="0"]
 visible = false
-
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 332.672, 419.547 )
-collision_layer = 2
-collision_mask = 0
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 0.101501, -0.963806 )
-shape = SubResource( 94 )
 [connection signal="area_entered" from="TopRightHouseExit" to="KinematicBody2D" method="_on_TopRightHouseExit_area_entered"]
-[connection signal="area_entered" from="Area2D" to="KinematicBody2D" method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="KinematicBody2D2/Area2D" to="KinematicBody2D" method="_on_Area2D_area_entered"]
 
 [editable path="CanvasLayer"]

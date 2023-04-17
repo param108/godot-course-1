@@ -56,11 +56,11 @@ var reentered_from = ""
 
 const reentry_points = {
 	"top_right_house": {
-		"x": 850,
+		"x": 830,
 		"y": 265
 	}
 	, "bottom_right_house":{
-		"x": 826 , 
+		"x": 805 , 
 		"y": 549
 	},
 	"bottom_left_house" :{
