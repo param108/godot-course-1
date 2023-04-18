@@ -39,10 +39,10 @@ const dialog_data = {
 	},
 	"saira_clue":{
 		"dialog":""" hi i am saira . You must be the archaeologist Dr. Zoey . you must be searching for the map fragments .
-
  Well , here’s a verse which my parents gave me , hopefully it will help you . 
 The room is big , the rugs are long ,somewhere in that room lies a piece .
-Good luck on your search . When you are done with the search , we should go fishing ."""
+Good luck on your search . When you are done with the search , we should go fishing .""",
+	"need_input": false,
 	}}
 
 
@@ -56,11 +56,11 @@ var reentered_from = ""
 
 const reentry_points = {
 	"top_right_house": {
-		"x": 850,
+		"x": 830,
 		"y": 265
 	}
 	, "bottom_right_house":{
-		"x": 826 , 
+		"x": 805 , 
 		"y": 549
 	},
 	"bottom_left_house" :{

@@ -26,4 +26,5 @@ func _on_TopRightHouseExit_area_entered(area):
 
 
 func _on_Area2D_area_entered(area):
+	print("area entered")
 	SignalBus.emit_signal("show_dialog","saira_clue")
