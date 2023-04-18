@@ -4,26 +4,37 @@ extends KinematicBody2D
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
-
-const WALK_SPEED = 2
+const WALK_SPEED = 1
+const WALK_DURATION = 1
+var delta_spent = 0
+var current_action = "DOWN"
+var path = ["LEFT", "LEFT", "LEFT", "LEFT","LEFT","DOWN", "LEFT","LEFT","RIGHT","RIGHT","STOP"]
+var current_index = 0
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
 func _physics_process(delta):
 	var velocity = Vector2.ZERO
-	
-	if Input.is_action_pressed("ui_left"):
+	delta_spent = delta_spent + delta
+	if delta_spent > WALK_DURATION:
+		delta_spent = 0
+		current_index = current_index + 1
+		if current_index >= path.size():
+			current_index = 0
+	current_action = path[current_index]
+		
+	if current_action == "LEFT":
 		velocity = Vector2.LEFT*WALK_SPEED
-	elif Input.is_action_pressed("ui_right"):
+	elif current_action == "RIGHT":
 		velocity =  Vector2.RIGHT*WALK_SPEED
-	elif Input.is_action_pressed("ui_up"):
+	elif current_action == "UP":
 		velocity = Vector2.UP*WALK_SPEED
-	elif Input.is_action_pressed("ui_down"):
+	elif current_action == "DOWN":
 		velocity = Vector2.DOWN*WALK_SPEED
 	else:
 		velocity = Vector2.ZERO
 	move_and_collide(velocity)
-	
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass # Replace with function body.
@@ -32,21 +43,3 @@ func _ready():
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass
-
-
-
-
-
-
-func _on_OpeningOutsideCollison_area_exited(area):
-	pass # Replace with function body.
-
-
-func _on_OpeningOutsideCollison_area_entered(area):
-	GlobalData.reentered = true
-	GlobalData.reentered_from = "bottom_left_house"
-	get_tree().change_scene("res://opening.tscn")
-
-
-func _on_bumpbl_area_entered(area):
-	pass # Replace with function body.
