@@ -8,7 +8,13 @@ const WALK_SPEED = 1
 const WALK_DURATION = 1
 var delta_spent = 0
 var current_action = "DOWN"
-var path = ["LEFT", "LEFT", "LEFT", "LEFT","LEFT","DOWN", "LEFT","LEFT","RIGHT","RIGHT","STOP"]
+var path = [
+	"LEFT", "LEFT", 
+	"DOWN", "DOWN", 
+	"RIGHT","RIGHT",
+	"UP", "UP", 
+	"STOP"
+	]
 var current_index = 0
 # Declare member variables here. Examples:
 # var a = 2
