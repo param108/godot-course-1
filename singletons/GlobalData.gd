@@ -100,3 +100,11 @@ const reentry_points = {
 		"y": 205
 	}	
 }
+
+var inventory = {
+	"key": false,
+	"map_a": false,
+	"map_b": false,
+	"map_c": false,
+	"map_d": false
+}
