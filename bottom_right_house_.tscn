@@ -1086,6 +1086,19 @@ collision_mask = 2
 shape = SubResource( 62 )
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
+visible = false
+
+[node name="Label" parent="CanvasLayer/TextureRect" index="0"]
+margin_left = 76.0
+margin_top = 35.0
+margin_right = 826.0
+margin_bottom = 304.0
+
+[node name="Ok" parent="CanvasLayer/TextureRect" index="2"]
+margin_left = 729.0
+margin_top = 367.0
+margin_right = 848.0
+margin_bottom = 415.0
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 5, -17 )
