@@ -13,13 +13,20 @@ const dialog_data = {
 		"choices": {},
 	},
 	"aria_clue":{
-		"dialog": """Hallo ! You must be ‘The Dr, Zoey ‘ . My neighbor and best friend , Saira , told me you were coming to find
-		the Treasure of the Kirghiz . Well , I am Aria ,nice to meet you . My friend Saira or ‘The Fisher’ told me that you
-		would be coming in search of the map fragment.
+		"dialog": """Hallo ! You must be ‘The Dr, Zoey‘. 
+		My neighbor and best friend, Saira, told me you were coming to find
+		the Treasure of the Kirghiz . 
+		
+		Well, I am Aria, nice to meet you! You must be looking for the 
+		map fragment.
 
 		I can't help you much, but my parents taught me this riddle long long ago.
-		My house has 2 bedrooms , 1 guest room and 1 kitchen . in one of these rooms lies a not belonging object locate it and you will 
-		get the fragment """,
+		
+		My house has 2 bedrooms, 
+		1 guest room and 1 kitchen. 
+		In one of these rooms lies a not belonging object.
+		Locate it and you will get the fragment """,
+		
 		"need_input" : false,
 		"choices" : {}
 	},
@@ -38,11 +45,32 @@ const dialog_data = {
 		"choices" : {}
 	},
 	"saira_clue":{
-		"dialog":""" hi i am saira . You must be the archaeologist Dr. Zoey . you must be searching for the map fragments .
- Well , here’s a verse which my parents gave me , hopefully it will help you . 
-The room is big , the rugs are long ,somewhere in that room lies a piece .
-Good luck on your search . When you are done with the search , we should go fishing .""",
+		"dialog":""" Hi I am Saira! You must be the archaeologist Dr. Zoey. 
+		You must be searching for the map fragments.
+		Well , here’s a verse which my parents gave me, hopefully it will help you. 
+		
+		The room is big, 
+		The rugs are long,
+		Somewhere in that room lies a piece.
+		Good luck on your search. 
+		
+		When you are done with the search, we should go fishing!""",
 	"need_input": false,
+	},
+	"james": {
+		"dialog":""" Hey Zoey! Long time no see!
+		I hear you are looking for the Rexium!
+		One of our ancient ancestors hid the key in the lake which
+		was once a large river.
+		
+		By the way, after you are done meet me at my home in the
+		city.
+		
+		Oh! Now you want the map fragment you say ?
+		I cant say for sure, feel free to look around.
+		Our parents were bibliophiles, remember ?
+		""",
+		"need_input": false,
 	}}
 
 

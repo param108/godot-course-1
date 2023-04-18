@@ -49,4 +49,4 @@ func _on_OpeningOutsideCollison_area_entered(area):
 
 
 func _on_bumpbl_area_entered(area):
-	pass # Replace with function body.
+	SignalBus.emit_signal("show_dialog", "james")

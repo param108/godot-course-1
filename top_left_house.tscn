@@ -3546,9 +3546,6 @@ tile_data = PoolIntArray( 196630, 5, 0, 196631, 16, 0, 196632, 16, 0, 196633, 16
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
 
-[node name="TextureRect" parent="CanvasLayer" index="0"]
-visible = false
-
 [node name="HeroTopLeft" type="KinematicBody2D" parent="."]
 script = ExtResource( 6 )
 
