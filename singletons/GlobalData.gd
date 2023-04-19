@@ -60,8 +60,7 @@ const dialog_data = {
 	"james": {
 		"dialog":""" Hey Zoey! Long time no see!
 		I hear you are looking for the Rexium!
-		One of our ancient ancestors hid the key in the lake which
-		was once a large river.
+		One of our ancient ancestors hid the key in the lake river.
 		
 		By the way, after you are done meet me at my home in the
 		city.
@@ -71,7 +70,12 @@ const dialog_data = {
 		Our parents were bibliophiles, remember ?
 		""",
 		"need_input": false,
-	}}
+	},
+	"found_bottom_right_map":{
+		"dialog": """Good Job ! 
+		 You found the map piece """,
+		"need_input": false
+		}}
 
 
 		
@@ -103,8 +107,9 @@ const reentry_points = {
 
 var inventory = {
 	"key": false,
-	"map_a": false,
-	"map_b": false,
-	"map_c": false,
-	"map_d": false
+	"map_top_right": false,
+	"map_top_left": false,
+	"map_bottom_right": false,
+	"map_bottom_left": false
 }
+var top_right_spoken_to_npc = false
