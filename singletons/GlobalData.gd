@@ -31,14 +31,14 @@ const dialog_data = {
 		"choices" : {}
 	},
 	"rug_riddle":{
-		"dialog": """Hello ! You must be the reknowed Dr.Zoey, I've heard a lot
+		"dialog": """Hello ! You must be the renowned Dr.Zoey, I've heard a lot
 		lot about you.Yes,One of the pieces of the map is here but I forgot 
 		where it was.Maybe you can search my house.My parents had a fervour for
 		rugs and I love them too! RUGS RUGS RUGS!!!
 		
 		My parents told me this riddle when I was young, Here it is! :
-		Go to the abode of relaxation and peace 
-		Search the rug made of fleece 
+		Go to the realm of relaxation and peace 
+		Search the scarlet and claret coloured rug made of fleece 
 		Then you might find 
 		The fifth vase from the fourth the map of my kind """,
 		"need_input" : false,
@@ -70,6 +70,10 @@ const dialog_data = {
 		I cant say for sure, feel free to look around.
 		Our parents were bibliophiles, remember ?
 		""",
+		"need_input": false,
+	},
+	"found_top_left":{
+		"dialog":"""Congrats! You've found the top left map piece! """,
 		"need_input": false,
 	}}
 
@@ -103,8 +107,10 @@ const reentry_points = {
 
 var inventory = {
 	"key": false,
-	"map_a": false,
-	"map_b": false,
-	"map_c": false,
-	"map_d": false
+	"map_top_right": false,
+	"map_top_left": false,
+	"map_bottom_right": false,
+	"map_bottom_left": false
 }
+var bottom_left_spoken_to_npc = false
+ 

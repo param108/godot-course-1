@@ -49,4 +49,16 @@ func _on_OpeningOutsideCollison_area_entered(area):
 
 
 func _on_bumpbl_area_entered(area):
-	SignalBus.emit_signal("show_dialog", "james")
+	GlobalData.bottom_left_spoken_to_npc = true
+	SignalBus.emit_signal("show_dialog","james")
+
+func _on_bumpmapb_area_entered(area):
+	print("entered_bump_map")
+	print("values",
+	GlobalData.bottom_left_spoken_to_npc,
+	GlobalData.inventory["map_bottom_left"]
+	)
+	if GlobalData.bottom_left_spoken_to_npc == true :
+		if GlobalData.inventory["map_bottom_left"] == false:
+			GlobalData.inventory["map_bottom_left"] = true
+			SignalBus.emit_signal("show_dialog","found_top_left")
