@@ -2611,6 +2611,9 @@ tile_data = PoolIntArray( 262158, 1, 0, 327694, 26, 0, 393230, 25, 0, 393235, 0,
 
 [node name="CanvasLayer" parent="." instance=ExtResource( 7 )]
 
+[node name="TextureRect" parent="CanvasLayer" index="0"]
+visible = false
+
 [node name="HeroBottomLeft" type="KinematicBody2D" parent="."]
 script = ExtResource( 5 )
 
@@ -2649,7 +2652,7 @@ position = Vector2( 10.5, 294 )
 shape = SubResource( 71 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 863, 365 )
+position = Vector2( 854, 318 )
 script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]

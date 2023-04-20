@@ -50,3 +50,15 @@ func _on_OpeningOutsideCollison_area_entered(area):
 
 func _on_bumptl_area_entered(area):
 	SignalBus.emit_signal("show_dialog","rug_riddle")
+	
+
+
+
+func _on_Area2D_area_entered(area):
+	GlobalData.bottom_left_spoken_to_npc
+	GlobalData.inventory["map_top_left"]
+	if GlobalData.bottom_left_spoken_to_npc == true :
+		if GlobalData.inventory["map_top_left"] == false:
+			GlobalData.inventory["map_top_left"] = true
+			SignalBus.emit_signal("show_dialog","found_top_left")
+
