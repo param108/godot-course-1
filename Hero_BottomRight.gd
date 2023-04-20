@@ -40,7 +40,7 @@ func _on_Area2D_area_entered(area):
 
 
 func _on_Area2D2_area_entered(area):
-	GlobalData.top_right_spoken_to_npc = true
+	GlobalData.bottom_right_spoken_to_npc = true
 	print("reached")
 	SignalBus.emit_signal("show_dialog","aria_clue")
 		
@@ -48,7 +48,7 @@ func _on_Area2D2_area_entered(area):
 
 func _on_map_piece_area_entered(area):
 	print("hallo")
-	if GlobalData.top_right_spoken_to_npc == true:
+	if GlobalData.bottom_right_spoken_to_npc == true:
 		if GlobalData.inventory["map_top_right"] == false: 
 			GlobalData.inventory["map_top_right"] = true
 			SignalBus.emit_signal("show_dialog","found_bottom_right_map")
