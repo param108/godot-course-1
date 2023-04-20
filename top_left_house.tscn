@@ -3684,5 +3684,6 @@ shape = SubResource( 113 )
 
 [connection signal="area_entered" from="OpeningOutsideCollison" to="HeroTopLeft" method="_on_OpeningOutsideCollison_area_entered"]
 [connection signal="area_entered" from="KinematicBody2D/bumptl" to="HeroTopLeft" method="_on_bumptl_area_entered"]
+[connection signal="area_entered" from="Area2D" to="HeroTopLeft" method="_on_Area2D_area_entered"]
 
 [editable path="CanvasLayer"]
