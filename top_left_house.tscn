@@ -3589,7 +3589,7 @@ height = 10.0
 extents = Vector2( 14.0505, 17.9569 )
 
 [sub_resource type="RectangleShape2D" id=113]
-extents = Vector2( 52.5, 19.5 )
+extents = Vector2( 49.25, 21.25 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -3603,7 +3603,7 @@ tile_data = PoolIntArray( 0, 5, 0, 1, 5, 0, 2, 5, 0, 3, 5, 0, 4, 5, 0, 5, 5, 0, 
 tile_set = SubResource( 3 )
 cell_size = Vector2( 32, 32 )
 format = 1
-tile_data = PoolIntArray( 0, 3, 0, 4, 1, 0, 6, 1, 0, 8, 1, 0, 10, 1, 0, 11, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 16, 1, 0, 17, 1, 0, 18, 1, 0, 19, 1, 0, 20, 1, 0, 21, 1, 0, 22, 1, 0, 23, 1, 0, 28, 3, 0, 131092, 4, 0, 131098, 4, 0, 196610, 0, 0, 196630, 3, 0, 196632, 3, 0, 262149, 0, 0, 262155, 0, 0, 262160, 0, 0, 262164, 4, 0, 262170, 4, 0, 327702, 3, 0, 327704, 3, 0, 458764, 0, 0, 458769, 0, 0, 524291, 2, 0, 524292, 2, 0, 524297, 2, 0, 524298, 2, 0, 589828, 2, 0, 589829, 2, 0, 589830, 2, 0, 589831, 2, 0, 589833, 2, 0, 589851, 2, 0, 655362, 1, 0, 655366, 0, 0, 655372, 1, 0, 655374, 536870915, 0, 655376, 536870915, 0, 655377, 536870915, 0, 655378, 536870915, 0, 655380, 536870915, 0, 655382, 3, 0, 655384, 3, 0, 655386, 3, 0, 655388, 6, 0, 720897, 1, 0, 720899, 1, 0, 720901, 1, 0, 720905, 1, 0, 720907, 1, 0, 720909, 1, 0, 786433, 1, 0, 786435, 1, 0, 786436, 1, 0, 786438, 1, 0, 786439, 1, 0, 786441, 1, 0, 786443, 1, 0, 786444, 1, 0, 786445, 1, 0, 786447, 536870915, 0, 786448, 536870915, 0, 786450, 536870915, 0, 786452, 536870915, 0, 786454, 3, 0, 851969, 1, 0, 851970, 1, 0, 851972, 1, 0, 851974, 1, 0, 851976, 1, 0, 851978, 1, 0, 851979, 1, 0, 851980, 1, 0, 851981, 1, 0, 917505, 1, 0, 917507, 1, 0, 917509, 1, 0, 917510, 1, 0, 917511, 1, 0, 917512, 1, 0, 917513, 1, 0, 917514, 1, 0, 917516, 1, 0, 917517, 1, 0 )
+tile_data = PoolIntArray( 0, 3, 0, 4, 1, 0, 6, 1, 0, 8, 1, 0, 10, 1, 0, 11, 1, 0, 13, 1, 0, 14, 1, 0, 15, 1, 0, 16, 1, 0, 17, 1, 0, 18, 1, 0, 19, 1, 0, 20, 1, 0, 21, 1, 0, 22, 1, 0, 23, 1, 0, 28, 3, 0, 131092, 4, 0, 131098, 4, 0, 196610, 0, 0, 196630, 3, 0, 196632, 3, 0, 262149, 0, 0, 262155, 0, 0, 262160, 0, 0, 262164, 4, 0, 262170, 4, 0, 327702, 3, 0, 327704, 3, 0, 458764, 0, 0, 458769, 0, 0, 524291, 2, 0, 524292, 2, 0, 524297, 2, 0, 524298, 2, 0, 589828, 2, 0, 589829, 2, 0, 589830, 2, 0, 589831, 2, 0, 589833, 2, 0, 589851, 2, 0, 655362, 1, 0, 655366, 0, 0, 655372, 1, 0, 655374, 536870915, 0, 655376, 536870915, 0, 655377, 536870915, 0, 655378, 536870915, 0, 655380, 536870915, 0, 655382, 3, 0, 655384, 3, 0, 655386, 3, 0, 655388, 6, 0, 720897, 1, 0, 720899, 1, 0, 720901, 1, 0, 720905, 1, 0, 720907, 1, 0, 720909, 1, 0, 786433, 1, 0, 786435, 1, 0, 786436, 1, 0, 786438, 1, 0, 786439, 1, 0, 786441, 1, 0, 786443, 1, 0, 786444, 1, 0, 786445, 1, 0, 786447, 536870915, 0, 786448, 536870915, 0, 786450, 536870915, 0, 786452, 536870915, 0, 786454, 3, 0, 851969, 1, 0, 851970, 1, 0, 851972, 1, 0, 851974, 1, 0, 851976, 1, 0, 851978, 1, 0, 851979, 1, 0, 851980, 1, 0, 851981, 1, 0, 917505, 1, 0, 917507, 1, 0, 917509, 1, 0, 917510, 1, 0, 917511, 1, 0, 917512, 1, 0, 917513, 1, 0, 917514, 1, 0, 917516, 1, 0, 917517, 1, 0, 917519, 3, 0, 917521, 3, 0, 917523, 3, 0, 917525, 3, 0, 917527, 3, 0 )
 
 [node name="TileMap 3" type="TileMap" parent="TileMap"]
 tile_set = SubResource( 25 )
@@ -3626,13 +3626,13 @@ visible = false
 script = ExtResource( 6 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="HeroTopLeft"]
-position = Vector2( 229, 535 )
+position = Vector2( 235, 541 )
 frames = SubResource( 58 )
 animation = "up"
 script = ExtResource( 3 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HeroTopLeft"]
-position = Vector2( 227, 538 )
+position = Vector2( 233, 544 )
 shape = SubResource( 59 )
 
 [node name="AreaInteract" type="Area2D" parent="HeroTopLeft"]
@@ -3640,7 +3640,7 @@ collision_layer = 2
 collision_mask = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="HeroTopLeft/AreaInteract"]
-position = Vector2( 225.432, 538.757 )
+position = Vector2( 231.432, 544.757 )
 shape = SubResource( 60 )
 
 [node name="OpeningOutsideCollison" type="Area2D" parent="."]
@@ -3675,15 +3675,17 @@ collision_mask = 0
 position = Vector2( 756.404, 375.324 )
 shape = SubResource( 62 )
 
-[node name="Area2D" type="Area2D" parent="."]
-position = Vector2( 415, 501 )
+[node name="bumprugs" type="Area2D" parent="."]
+position = Vector2( 456, 534 )
+collision_layer = 2
+collision_mask = 0
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2( 40.5, 5.5 )
+[node name="CollisionShape2D" type="CollisionShape2D" parent="bumprugs"]
+position = Vector2( -5.25, -29.25 )
 shape = SubResource( 113 )
 
 [connection signal="area_entered" from="OpeningOutsideCollison" to="HeroTopLeft" method="_on_OpeningOutsideCollison_area_entered"]
 [connection signal="area_entered" from="KinematicBody2D/bumptl" to="HeroTopLeft" method="_on_bumptl_area_entered"]
-[connection signal="area_entered" from="Area2D" to="HeroTopLeft" method="_on_Area2D_area_entered"]
+[connection signal="area_entered" from="bumprugs" to="HeroTopLeft" method="_on_bumprugs_area_entered"]
 
 [editable path="CanvasLayer"]

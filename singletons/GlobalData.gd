@@ -82,7 +82,7 @@ const dialog_data = {
 	},
 	"found_top_left":{
 		"dialog": """Congrats! You've discovered the top left map piece """,
-		"need input": false,
+		"need_input": false,
 		}}
 	
 var current_dialog_key = ""
@@ -119,4 +119,4 @@ var inventory = {
 
 var top_right_spoken_to_npc = false
 var bottom_left_spoken_to_npc = false
- 
+var top_left_spoken_to_npc = false

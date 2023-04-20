@@ -59,3 +59,4 @@ func _on_bumpmapb_area_entered(area):
 		if GlobalData.inventory["map_bottom_left"] == false:
 			GlobalData.inventory["map_bottom_left"] = true
 			SignalBus.emit_signal("show_dialog","found_bottom_left")
+			GlobalData.inventory
