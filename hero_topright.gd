@@ -24,6 +24,15 @@ func _on_TopRightHouseExit_area_entered(area):
 	GlobalData.reentered_from = "top_right_house"
 	get_tree().change_scene("res://opening.tscn")
 
+
 func _on_Area2D_area_entered(area):
 	print("area entered")
+	GlobalData.top_right_spoken_to_npc = true 
 	SignalBus.emit_signal("show_dialog","saira_clue")
+
+func _on_map_found_area_entered(area):
+	print("mapfond")
+	if GlobalData.top_right_spoken_to_npc == true:
+		if GlobalData.inventory["map_top_right"] == false:
+			GlobalData.inventory["map_top_right"] = true 
+			SignalBus.emit_signal("show_dialog","map_top_right_found")
