@@ -53,12 +53,9 @@ func _on_bumpbl_area_entered(area):
 	SignalBus.emit_signal("show_dialog","james")
 
 func _on_bumpmapb_area_entered(area):
-	GlobalData.bottom_left_spoken_to_npc
-	GlobalData.inventory["map_bottom_left"]
-	if GlobalData.bottom_left_spoken_to_npc == true :
+	if GlobalData.bottom_left_spoken_to_npc == true:
 		if GlobalData.inventory["map_bottom_left"] == false:
 			GlobalData.inventory["map_bottom_left"] = true
 			SignalBus.emit_signal("show_dialog","found_bottom_left")
-			GlobalData.inventory
-	if GlobalData.bottom_left_spoken_to_npc == true :
-			 GlobalData.inventory["map_bottom_left"] == true
+		else:
+			SignalBus.emit_signal("show_dialog","already_found_bottom_left")

@@ -36,3 +36,5 @@ func _on_map_found_area_entered(area):
 		if GlobalData.inventory["map_top_right"] == false:
 			GlobalData.inventory["map_top_right"] = true 
 			SignalBus.emit_signal("show_dialog","map_top_right_found")
+		elif GlobalData.inventory["map_top_right"] == true:
+			SignalBus.emit_signal("show_dialog","already_found_top_right")

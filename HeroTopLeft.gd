@@ -61,6 +61,5 @@ func _on_bumprugs_area_entered(area):
 		if GlobalData.inventory["map_top_left"] == false:
 			GlobalData.inventory["map_top_left"] = true
 			SignalBus.emit_signal("show_dialog","found_top_left")
-	elif GlobalData.top_left_spoken_to_npc == true :
-		if GlobalData.inventory["map_top_left"] ==true :
-			SignalBus.emit_signal("show_dialog","already_top_found_left")
+		else:
+			SignalBus.emit_signal("show_dialog","already_found_top_left")

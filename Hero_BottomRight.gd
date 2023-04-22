@@ -49,6 +49,8 @@ func _on_Area2D2_area_entered(area):
 func _on_map_piece_area_entered(area):
 	print("hallo")
 	if GlobalData.bottom_right_spoken_to_npc == true:
-		if GlobalData.inventory["map_top_right"] == false: 
-			GlobalData.inventory["map_top_right"] = true
-			SignalBus.emit_signal("show_dialog","found_bottom_right_map")
+		if GlobalData.inventory["map_bottom_right"] == false: 
+			GlobalData.inventory["map_bottom_right"] = true
+			SignalBus.emit_signal("show_dialog","found_bottom_right_map") 
+		elif  GlobalData.inventory["map_bottom_right"] == true:
+			SignalBus.emit_signal("show_dialog","already_found_bottom_right")

@@ -84,19 +84,28 @@ const dialog_data = {
 		"dialog": """ Very Very Well Done !!! 
 		you have found the top right piece of the map """,
 		"need_input":false,
-		},
+	},
 	"found_top_left":{
 		"dialog": """Congrats! You've discovered the top left map fragment! """,
 		"need_input": false,
-		},
+	},
 	"already_found_bottom_left":{
 		"dialog": """You've already obtained the bottom left map fragment.""",
 		"need_input": false,
-		},
-		"already_found_top_left":{
+	},
+	"already_found_top_left":{
 		"dialog": """You've already obtained the top left map fragment. """ ,
 		"need_input": false,
-		}}
+	},
+	"already_found_bottom_right":{
+		"dialog":""" you already found the map.""",
+		"need_input": false
+	},
+	"already_found_top_right":{
+		"dialog":"""You already found the map piece""",
+		"need_input": false
+	}
+}
 	
 var current_dialog_key = ""
 
