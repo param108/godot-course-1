@@ -77,7 +77,7 @@ const dialog_data = {
 		"need_input": false
 		},
 	"found_bottom_left":{
-		"dialog":"""Congrats! You've found the bottom left map piece! """,
+		"dialog":"""Congrats! You've discovered the left map fragment! """,
 		"need_input": false,
 	},
 	"map_top_right_found":{
@@ -86,7 +86,11 @@ const dialog_data = {
 		"need_input":false,
 	},
 	"found_top_left":{
-		"dialog": """Congrats! You've discovered the top left map piece """,
+		"dialog": """Congrats! You've discovered the top left map fragment! """,
+		"need_input": false,
+		},
+	"already_found_bottom_left":{
+		"dialog": """You've already obtained the bottom left map fragment.""",
 		"need_input": false,
 	},
 	"already_found_bottom_right":{
