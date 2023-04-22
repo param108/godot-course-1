@@ -61,7 +61,4 @@ func _on_bumpmapb_area_entered(area):
 			SignalBus.emit_signal("show_dialog","found_bottom_left")
 			GlobalData.inventory
 	if GlobalData.bottom_left_spoken_to_npc == true :
-		if GlobalData.inventory["map_bottom_left"] == true:
-			GlobalData.inventory["map_bottom_left"] = false
-			SignalBus.emit_signal("show_dialog","already_found_bottom_left")
-	
+			 GlobalData.inventory["map_bottom_left"] == true

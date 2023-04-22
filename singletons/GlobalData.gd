@@ -92,6 +92,10 @@ const dialog_data = {
 	"already_found_bottom_left":{
 		"dialog": """You've already obtained the bottom left map fragment.""",
 		"need_input": false,
+		},
+		"already_found_top_left":{
+		"dialog": """You've already obtained the top left map fragment. """ ,
+		"need_input": false,
 		}}
 	
 var current_dialog_key = ""
