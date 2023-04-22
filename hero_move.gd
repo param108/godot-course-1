@@ -60,3 +60,17 @@ func _on_TopRightCollision_area_entered(area):
 func _on_BottomRightCollision_area_entered(area):
 	get_tree().change_scene("res://bottom_right_house_.tscn")
 
+
+
+func _on_bumplake_area_entered(area):
+	if (GlobalData.inventory ["map_bottom_left"] == true and
+		GlobalData.inventory ["map_top_left"] == true and
+		GlobalData.inventory ["map_bottom_right"] == true and
+		GlobalData.inventory ["map_top_right"] == true and
+		GlobalData.inventory["fishing_rod"] == true):
+			GlobalData.inventory["key"] = true
+			SignalBus.emit_signal("show_dialog","spotted_key")
+	else:
+		SignalBus.emit_signal("show_dialog","spotted_shimmering_object")
+	
+	

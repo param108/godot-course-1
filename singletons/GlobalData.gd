@@ -104,8 +104,19 @@ const dialog_data = {
 	"already_found_top_right":{
 		"dialog":"""You already found the map piece""",
 		"need_input": false
-	}
-}
+	},
+	"spotted_shimmering_object":{
+		"dialog":"""You see a shimmering object in the depths of the lake.What 
+		is it you wonder?""",
+		"need_input": false
+		},
+	"spotted_key":{
+		'dialog':"""You have found the key!!! You are ecstatic and filled with 
+		pride and joy.""",
+		"need_input": false
+		}}
+	
+	
 	
 var current_dialog_key = ""
 
@@ -136,7 +147,8 @@ var inventory = {
 	"map_top_right": false,
 	"map_top_left": false,
 	"map_bottom_right": false,
-	"map_bottom_left": false
+	"map_bottom_left": false,
+	"fishing_rod": false
 }
 
 var top_right_spoken_to_npc = false
