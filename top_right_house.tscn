@@ -1,4 +1,4 @@
-[gd_scene load_steps=106 format=2]
+[gd_scene load_steps=107 format=2]
 
 [ext_resource path="res://floor/wood_floor.png" type="Texture" id=1]
 [ext_resource path="res://interiors/Interior.png" type="Texture" id=2]
@@ -1421,6 +1421,9 @@ radius = 17.4276
 [sub_resource type="RectangleShape2D" id=95]
 extents = Vector2( 25, 47 )
 
+[sub_resource type="RectangleShape2D" id=96]
+extents = Vector2( 26.1875, 25.2656 )
+
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
@@ -1501,8 +1504,18 @@ collision_mask = 0
 position = Vector2( 3, -12 )
 shape = SubResource( 95 )
 
+[node name="fishing_rod_find" type="Area2D" parent="."]
+position = Vector2( 597, 70 )
+collision_layer = 2
+collision_mask = 0
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="fishing_rod_find"]
+position = Vector2( 2.8125, 3.73438 )
+shape = SubResource( 96 )
+
 [connection signal="area_entered" from="TopRightHouseExit" to="KinematicBody2D" method="_on_TopRightHouseExit_area_entered"]
 [connection signal="area_entered" from="KinematicBody2D2/Area2D" to="KinematicBody2D" method="_on_Area2D_area_entered"]
 [connection signal="area_entered" from="map_found" to="KinematicBody2D" method="_on_map_found_area_entered"]
+[connection signal="area_entered" from="fishing_rod_find" to="KinematicBody2D" method="_on_fishing_rod_find_area_entered"]
 
 [editable path="CanvasLayer"]

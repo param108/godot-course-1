@@ -109,14 +109,17 @@ const dialog_data = {
 		"dialog":"""You see a shimmering object in the depths of the lake.What 
 		is it you wonder?""",
 		"need_input": false
-		},
+	},
 	"spotted_key":{
 		'dialog':"""You have found the key!!! You are ecstatic and filled with 
 		pride and joy.""",
 		"need_input": false
-		}}
-	
-	
+	},
+	"found_fishing_rod": {
+		"dialog":"""Great ! you found the fishing rod.""",
+		"need_input": false
+	}
+}
 	
 var current_dialog_key = ""
 

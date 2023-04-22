@@ -38,3 +38,13 @@ func _on_map_found_area_entered(area):
 			SignalBus.emit_signal("show_dialog","map_top_right_found")
 		elif GlobalData.inventory["map_top_right"] == true:
 			SignalBus.emit_signal("show_dialog","already_found_top_right")
+
+
+func _on_fishing_rod_find_area_entered(area):
+	if (GlobalData.inventory["map_top_right"] == true and
+		GlobalData.inventory["map_top_left"] == true and
+		GlobalData.inventory ["map_bottom_right"] == true and 
+		GlobalData.inventory ["map_bottom_left"] == true):
+		GlobalData.inventory["fishing_rod"] = true
+		SignalBus.emit_signal("show_dialog","found_fishing_rod")
+		
