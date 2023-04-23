@@ -140,11 +140,16 @@ const dialog_data = {
 	},
 	"find_fishing_rod":{
 		"dialog":""" Hi Zoey! you must need a fishing rod, James told me.There 
-		should be one under the blue bed . Best of luck !!""",
+		should be one under the blue bed.Best of luck!!!""",
 		"need_input": false
-		}}
-	
-	
+		},
+		"already_found_key":{
+			"dialog":""" You have already obtained the key.You only see a large
+			variety and quantity of fishes, crabs, otters and frogs in the large
+			 lake.Perhaps, after this adventure you can fish using Saira's extra
+			 fishing rod with Saira and Jamie!""",
+			"need_input": false
+			}}
 var current_dialog_key = ""
 
 var reentered = false
