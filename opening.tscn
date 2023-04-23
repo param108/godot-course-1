@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://basic_tileset_and_assets_plus/tiles_and_assets/assets_spritesheet_v2.png" type="Texture" id=1]
 [ext_resource path="res://basic_tileset_and_assets_plus/tiles_and_assets/terrain_tiles_v2.png" type="Texture" id=2]
@@ -13,6 +13,7 @@
 [ext_resource path="res://TopRightCollision.gd" type="Script" id=11]
 [ext_resource path="res://BottomRightCollision.gd" type="Script" id=12]
 [ext_resource path="res://Dialog/Dialog.tscn" type="PackedScene" id=13]
+[ext_resource path="res://opening.gd" type="Script" id=14]
 
 [sub_resource type="TileSet" id=1]
 0/name = "terrain_tiles_v2.png 0"
@@ -648,46 +649,6 @@
 38/shapes = [  ]
 38/z_index = 0
 
-[sub_resource type="AtlasTexture" id=27]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 0, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=28]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 32, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=29]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 64, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=30]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 96, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=31]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 128, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=32]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 160, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=33]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 192, 0, 32, 32 )
-
-[sub_resource type="AtlasTexture" id=34]
-flags = 4
-atlas = ExtResource( 5 )
-region = Rect2( 224, 0, 32, 32 )
-
 [sub_resource type="AtlasTexture" id=3]
 flags = 4
 atlas = ExtResource( 5 )
@@ -808,13 +769,48 @@ flags = 4
 atlas = ExtResource( 5 )
 region = Rect2( 224, 32, 32, 32 )
 
+[sub_resource type="AtlasTexture" id=27]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 0, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=28]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 32, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=29]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 64, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=30]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 96, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=31]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 128, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=32]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 160, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=33]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 192, 0, 32, 32 )
+
+[sub_resource type="AtlasTexture" id=34]
+flags = 4
+atlas = ExtResource( 5 )
+region = Rect2( 224, 0, 32, 32 )
+
 [sub_resource type="SpriteFrames" id=35]
 animations = [ {
-"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
-"loop": true,
-"name": "down",
-"speed": 5.0
-}, {
 "frames": [ SubResource( 3 ), SubResource( 4 ), SubResource( 5 ), SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ) ],
 "loop": true,
 "name": "left",
@@ -828,6 +824,11 @@ animations = [ {
 "frames": [ SubResource( 19 ), SubResource( 20 ), SubResource( 21 ), SubResource( 22 ), SubResource( 23 ), SubResource( 24 ), SubResource( 25 ), SubResource( 26 ) ],
 "loop": true,
 "name": "up",
+"speed": 5.0
+}, {
+"frames": [ SubResource( 27 ), SubResource( 28 ), SubResource( 29 ), SubResource( 30 ), SubResource( 31 ), SubResource( 32 ), SubResource( 33 ), SubResource( 34 ) ],
+"loop": true,
+"name": "down",
 "speed": 5.0
 } ]
 
@@ -1127,9 +1128,10 @@ extents = Vector2( 13, 26 )
 extents = Vector2( 12, 21.5 )
 
 [sub_resource type="RectangleShape2D" id=46]
-extents = Vector2( 133, 97.5 )
+extents = Vector2( 45.9999, 28.56 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 14 )
 __meta__ = {
 "_edit_vertical_guides_": [ 1280.0, 1264.0 ]
 }
@@ -1155,6 +1157,7 @@ position = Vector2( 526, 153 )
 script = ExtResource( 7 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
+position = Vector2( 1, 2 )
 frames = SubResource( 35 )
 animation = "left"
 script = ExtResource( 6 )
@@ -1219,19 +1222,20 @@ script = ExtResource( 12 )
 position = Vector2( 794, 511.5 )
 shape = SubResource( 45 )
 
+[node name="CanvasLayer" parent="." instance=ExtResource( 13 )]
+
 [node name="bumplake" type="Area2D" parent="."]
-position = Vector2( 514, 285 )
+position = Vector2( 503, 289 )
 collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bumplake"]
-position = Vector2( -9, -0.5 )
+position = Vector2( -91, -13 )
 shape = SubResource( 46 )
-
-[node name="CanvasLayer" parent="." instance=ExtResource( 13 )]
-
 [connection signal="area_entered" from="TopLeftCollision" to="KinematicBody2D" method="_on_TopLeftCollision_area_entered"]
 [connection signal="area_entered" from="BottomLeftCollision" to="KinematicBody2D" method="_on_BottomLeftCollision_area_entered"]
 [connection signal="area_entered" from="TopRightCollision" to="KinematicBody2D" method="_on_TopRightCollision_area_entered"]
 [connection signal="area_entered" from="BottomRightCollision" to="KinematicBody2D" method="_on_BottomRightCollision_area_entered"]
 [connection signal="area_entered" from="bumplake" to="KinematicBody2D" method="_on_bumplake_area_entered"]
+
+[editable path="CanvasLayer"]

@@ -118,8 +118,26 @@ const dialog_data = {
 	"found_fishing_rod": {
 		"dialog":"""Great ! you found the fishing rod.""",
 		"need_input": false
-	}
-}
+	},
+	"intro_dialog": {
+		"dialog":""" Welcome Dr Zoey,
+		There is some precious Rexium somewhere in this area. Find it before
+		the evil Comrade Yuri takes it to destroy the world.
+		
+		The Rexium is an ancient artifact 
+		Ask the residents for clues to get the map to find it.
+		
+		Press "M" to view the contents of your backpack.
+		Godspeed!
+		""",
+		"need_input": false
+	},
+	"find_fishing_rod":{
+		"dialog":""" Hi Zoey! you must need a fishing rod, James told me.There 
+		should be one under the blue bed . Best of luck !!""",
+		"need_input": false
+		}}
+	
 	
 var current_dialog_key = ""
 
