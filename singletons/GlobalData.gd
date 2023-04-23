@@ -47,7 +47,8 @@ const dialog_data = {
 	"saira_clue":{
 		"dialog":""" Hi I am Saira! You must be the archaeologist Dr. Zoey. 
 		You must be searching for the map fragments.
-		Well , here’s a verse which my parents gave me, hopefully it will help you. 
+		Well , here’s a verse which my parents gave me, hopefully it will help 
+		you. 
 		
 		The room is big, 
 		The rugs are long,
@@ -124,7 +125,7 @@ const dialog_data = {
 		The powerful Rexium somewhere in this area. Find it before
 		the evil Comrade Yuri uses it to destroy the world.
 		
-		The Rexium is an ancient artifact made by the Kirghiz,which when used
+		The Rexium is an ancient artifact made by the Kirghiz, which when used
 		 for good, can make the world infinitely better it is said to be a
 		 blessing from the gods and when used for evil it can unleash a horde of
 		 evil spirts controlled by a large destructive monster which will raze 
