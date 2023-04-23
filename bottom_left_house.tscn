@@ -2581,7 +2581,7 @@ height = 18.0
 extents = Vector2( 15.5916, 22 )
 
 [sub_resource type="RectangleShape2D" id=107]
-extents = Vector2( 24.625, 34.5 )
+extents = Vector2( 22.625, 33.5 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -2678,7 +2678,7 @@ collision_layer = 2
 collision_mask = 0
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="bumpmapb"]
-position = Vector2( 2.625, 9.5 )
+position = Vector2( 4.625, 8.5 )
 shape = SubResource( 107 )
 
 [connection signal="area_entered" from="OpeningOutsideCollison" to="HeroBottomLeft" method="_on_OpeningOutsideCollison_area_entered"]

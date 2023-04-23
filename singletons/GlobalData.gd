@@ -121,13 +121,19 @@ const dialog_data = {
 	},
 	"intro_dialog": {
 		"dialog":""" Welcome Dr Zoey,
-		There is some precious Rexium somewhere in this area. Find it before
-		the evil Comrade Yuri takes it to destroy the world.
+		The powerful Rexium somewhere in this area. Find it before
+		the evil Comrade Yuri uses it to destroy the world.
 		
-		The Rexium is an ancient artifact 
+		The Rexium is an ancient artifact made by the Kirghiz,which when used
+		 for good, can make the world infinitely better it is said to be a
+		 blessing from the gods and when used for evil it can unleash a horde of
+		 evil spirts controlled by a large destructive monster which will raze 
+		the entire world.So for the greater good and knowledge please obtain it 
+		and defeat the malevolent Comrade Yuri.
+		
 		Ask the residents for clues to get the map to find it.
 		
-		Press "M" to view the contents of your backpack.
+		Press "I" to view the contents of your backpack.
 		Godspeed!
 		""",
 		"need_input": false
