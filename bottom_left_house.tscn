@@ -2578,7 +2578,7 @@ radius = 9.0
 height = 18.0
 
 [sub_resource type="RectangleShape2D" id=106]
-extents = Vector2( 15.5916, 20.8923 )
+extents = Vector2( 15.5916, 22 )
 
 [sub_resource type="RectangleShape2D" id=107]
 extents = Vector2( 24.625, 34.5 )
@@ -2652,7 +2652,7 @@ position = Vector2( 10.5, 294 )
 shape = SubResource( 71 )
 
 [node name="KinematicBody2D" type="KinematicBody2D" parent="."]
-position = Vector2( 854, 318 )
+position = Vector2( 909, 145 )
 script = ExtResource( 9 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="KinematicBody2D"]
@@ -2669,7 +2669,7 @@ shape = SubResource( 105 )
 position = Vector2( 0.931763, 3.14047 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="KinematicBody2D/bumpbl"]
-position = Vector2( -3.93176, -9.24812 )
+position = Vector2( -3.93176, -8.14044 )
 shape = SubResource( 106 )
 
 [node name="bumpmapb" type="Area2D" parent="."]
