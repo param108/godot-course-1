@@ -118,6 +118,19 @@ const dialog_data = {
 	"found_fishing_rod": {
 		"dialog":"""Great ! you found the fishing rod.""",
 		"need_input": false
+	},
+	"intro_dialog": {
+		"dialog":""" Welcome Dr Zoey,
+		There is some precious Rexium somewhere in this area. Find it before
+		the evil Comrade Yuri takes it to destroy the world.
+		
+		An asteroid of Rexium is known to have crashed here somewhere.
+		Ask the residents for clues to get the map to find it.
+		
+		Press "M" to view the contents of your backpack.
+		Godspeed!
+		""",
+		"need_input": false
 	}
 }
 	
